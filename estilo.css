@@ -16,3 +16,15 @@ p{
 a:link{
     color: royalblue;
 }
+
+a:visited{
+    color: #0f0;
+}
+
+a:hover{
+    color: #FF00FF;
+}
+
+a:active{
+    color: #00f;
+}
