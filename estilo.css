@@ -13,11 +13,11 @@ p{
 }
 
 a:link{
-    color: green;
+    color: red;
 }
 
 a:visited{
-    color: green;
+    color: red;
 }
 
 a:hover{
@@ -32,8 +32,7 @@ a:active{
     height: 100%;
     border: 1px solid black;
     border-collapse: collapse;
-    font: 100;
-    
+    font: 100px;
 }
 
 
