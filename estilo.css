@@ -18,7 +18,7 @@ a:link{
 }
 
 a:visited{
-    color: slategray;
+    color: royalblue;
 }
 
 a:hover{
@@ -30,28 +30,16 @@ a:active{
 }
 
 table, th, td {
+    height: 100%;
     border: 1px solid black;
     border-collapse: collapse;
+    font: 100;
   }
 
   .ju{
     width: 100%;
     height: 100%;
   }
-
-th{
-    height: 50px;
-    font: 20;
-}
-td{
-    height: 50px;
-    font: 20;
-}
-
-
-
-
-
 
 
 
