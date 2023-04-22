@@ -40,9 +40,11 @@ table, th, td {
   }
 
 th{
+    height: 50px;
     font: 20;
 }
 td{
+    height: 50px;
     font: 20;
 }
 
