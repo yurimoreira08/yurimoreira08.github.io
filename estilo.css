@@ -39,7 +39,12 @@ table, th, td {
     height: 100%;
   }
 
-
+th{
+    font: 20;
+}
+td{
+    font: 20;
+}
 
 
 
