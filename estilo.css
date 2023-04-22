@@ -1,7 +1,6 @@
 p{
     color: darkolivegreen;
     text-align: center;
-    font: 20;
 }
 
 .ian{
@@ -33,8 +32,8 @@ a:active{
 table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
-    width: 250;
-    height: 350;
+    width: 250px;
+    height: 350px;
   }
 
 
