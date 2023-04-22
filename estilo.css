@@ -1,17 +1,16 @@
 p{
-    color: darkolivegreen;
-    text-align: center;
+    color: darkblue;
+    text-align: left;
+    font: 100;
 }
 
 .ian{
-    color: darkolivegreen;
-    background-color: lightgray;
+    color: darkblue;
 }
 
 #opa{
-    color: darkolivegreen;
+    color: darkblue;
 }
-
 
 a:link{
     color: royalblue;
@@ -22,7 +21,7 @@ a:visited{
 }
 
 a:hover{
-    color: #FF00FF;
+    color: rgb(243, 13, 155);
 }
 
 a:active{
