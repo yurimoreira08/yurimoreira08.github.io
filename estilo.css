@@ -1,7 +1,6 @@
 .ip{
-    background-color: aquamarine;
-    min-width: 768px;
-    max-width: 1024px;
+    background-color: lavenderblush;
+    max-width: 900px;
 }
 
 p{
@@ -63,9 +62,9 @@ table, th, td {
 
 .pi{
     background-color: lightgrey;
-    min-width: 768px;
-    max-width: 1024px;
+    max-width: 900px;
 }
+
 
 
 
