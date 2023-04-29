@@ -33,14 +33,31 @@ table, th, td {
     border-collapse: collapse;
 }
 
-.muda{
-    color: yellowgreen;
+
+
+
+/* form.html */
+
+
+.b{
+    color: darkblue;
+    text-align: center;
+    font-size: 30px;
 }
 
+.ze{
+    color: darkblue;
+    text-align: center;
+    font-size: 25px;
+}
 
+.muda{
+    color: blue;
+}
 
-
-
+.pi{
+    background-color: lightgrey;
+}
 
 
 
