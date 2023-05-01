@@ -1,6 +1,15 @@
 .ip{
     background-color: lavenderblush;
-    @media screen and (max-width: 768px)
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 768px){
+    ip{
+        width: 100%;
+        flex-direction: column;
+    }
 }
 
 p{
@@ -44,6 +53,8 @@ table, th, td {
 
 
 
+
+
 /* form.html */
 
 
@@ -65,8 +76,8 @@ table, th, td {
 
 .pi{
     background-color: lightgrey;
-    @media screen and (max-width: 768px)
 }
+
 
 
 
