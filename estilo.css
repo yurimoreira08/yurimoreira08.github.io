@@ -1,15 +1,5 @@
 .ip{
     background-color: lavenderblush;
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-}
-
-@media screen and (max-width: 768px){
-    ip, pi{
-        width: 100%;
-        flex-direction: column-reverse;
-    }
 }
 
 p{
