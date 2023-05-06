@@ -68,9 +68,11 @@ table, th, td {
     background-color: lightgrey;
 }
 
-
-
-
+@media only screen and (max-device-width: 900px) {
+    
+    }
+    @media only screen and (max-device-width: 700px) {
+        }
 
 
   
