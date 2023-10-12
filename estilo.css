@@ -1,37 +1,119 @@
-.principal {
-    display: flex;
+/* Reset de estilos para remover margens e preenchimentos padrão */
+body,
+h1,
+p,
+ul,
+li,
+a,
+table {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: Arial, sans-serif;
 }
 
-.img-h1 {
+/*Estilo para o botão*/
+.buton {
+   background-color: rgb(29, 28, 28);
+   color: rgb(255, 255, 255);
+   width: 100%;
+   padding: 5px;
+   margin: 0;
+}
+  
+/* Estilo para o corpo da página */
+body {
+    background-color: red;   
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
+/* Estilo para o cabeçalho */
+h1 {    
+    text-align: center;
+    font-size: 28px;
+    margin-top: 20px;
+}
+
+/* Estilo para a imagem e nome */
+.img-h1 {
+    text-align: center;
+}
+
+img {
+    width: 200px;
+    height: 250px;
+    border: 2px solid #333;
+}
+
+/* Estilo para a seção principal */
+.principal {
+    display: flex;
+    background-color: #fff;
+    padding: 20px;
+    border: 2px solid #333;
+    margin: 20px;
+}
+
+/* Estilo para o parágrafo principal */
 .p-principal {
     display: flex;
     flex-direction: column;
     margin: 25px 0 0 15px;
 }
 
-.ip{
-    background-color: white;
+/*estilo para experiências*/
+.experiencias {
+    display: flex;
+    background-color: #fff;
+    padding: 20px;
+    border: 2px solid #333;
+    margin: 20px;
 }
 
-p{
-    color: black;
-    text-align: left;
-    font: 100;
-    margin: 5px;
+/*estilo para conhecimentos*/
+.conhecimentos {
+    display: flex;
+    background-color: #fff;
+    padding: 20px;
+    border: 2px solid #333;
+    margin: 20px;
+}
+
+/*estilo para a tabela*/
+.tabela {
+    display: flex;
+    background-color: #fff;
+    padding: 20px;
+    border: 2px solid #333;
+    margin: 20px;
+}
+
+/* Estilo para o parágrafo de informações pessoais */
+p {
     font-size: 25px;
 }
 
-.secundaria {
-    display: flex;
+.p-gol {
+    margin: 20px 0 -30px 0;
 }
 
+/* Estilo para a seção secundária */
+.secundaria {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #fff;
+    padding: 20px;
+    border: 2px solid #333;
+    margin: 20px;
+}
+
+/* Estilo para links, audios e videos*/
 .links-time {
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .auvi-time {
@@ -39,8 +121,23 @@ p{
     flex-direction: column;
 }
 
-a:link{
-    color: red;
+/*Estilo para o hino*/
+.hino {
+    display: flex;
+    flex-direction: column;
+    margin:  0 40px 10px 0;
+}
+
+/* Estilo para o video*/
+.video {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilo para links e listas */
+a {
+    color: red; 
+    text-decoration: none;
 }
 
 a:visited{
@@ -48,54 +145,116 @@ a:visited{
 }
 
 a:hover{
-    color: rgb(243, 13, 155);
-}
-
-a:active{
-    color: #00f;
-}
-
-table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
-    max-width: 400px;
-    max-height: 400px;
-}
-
-
-
-
-
-
-
-/* form.html */
-
-
-.b{
-    color: darkblue;
-    text-align: center;
-    font-size: 30px;
-}
-
-.ze{
-    color: darkblue;
-    text-align: center;
-    font-size: 25px;
-}
-
-.muda{
     color: blue;
 }
 
-.pi{
-    background-color: lightgrey;
+a:active{
+    color: green;
 }
 
-@media only screen and (max-device-width: 900px) {
-    
+ul {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+/* Estilo para tabelas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #333;
+    padding: 8px;
+    text-align: center;
+    font-size: 20px;
+}
+
+/* Estilo para áudio e vídeo */
+audio,
+video {
+    width: 100%;
+    margin: 0;
+}
+
+/* Estilo para os links na seção de contato */
+a[href^="mailto"] {
+    color: #0077b5;
+}
+
+/* Estilo para os links externos */
+a[target="_blank"] {
+    color: #0077b5;
+}
+
+/* Estilo para o rodapé */
+footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+/* Estilo para o p*/
+footer p {
+    font-size: 20px;
+}
+
+.hino p {
+    font-size: 15px;
+}
+
+.video p {
+    font-size: 15px;
+}
+
+/* Estilo para a seção de experiências e conhecimentos */
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/* Estilo para os parágrafos nas seções de experiências e conhecimentos */
+ul li,
+p {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+ /* Estilo responsivo */
+ @media (max-width: 768px) {
+    .principal {
+       flex-direction: column;
     }
-    @media only screen and (max-device-width: 700px) {
-        }
-
-
-  
+    .img-h1 img {
+       width: 150px;
+       height: 200px;
+    }
+    .auvi-time {
+        display: flex;
+       flex-direction: column;
+       justify-content: space-evenly;
+       margin: 0 0 0 20px;
+    }
+ }
+ 
+ @media (max-width: 480px) {
+    .img-h1 img {
+       width: 100px;
+       height: 150px;
+    }
+    .p-principal {
+       font-size: 14px;
+    }
+    .experiencias ul, .conhecimentos ul {
+       padding-left: 15px;
+    }
+    .tabela {
+       overflow-x: auto;
+    }
+ }
+ 
