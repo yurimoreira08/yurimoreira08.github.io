@@ -80,16 +80,15 @@ body {
   
  /* Estilo para links */
 a {
-    color: white; 
-    text-decoration: none;
+    color: black; 
 }
 
 a:visited{
-    color: pink;
+    color: black;
 }
 
 a:hover{
-    color: black;
+    color: gray;
 }
 
   /* Estilo para o botão dentro do link */
