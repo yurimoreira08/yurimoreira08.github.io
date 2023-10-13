@@ -1,0 +1,218 @@
+/* Reset de estilos para remover margens e preenchimentos padrão */
+body,
+h1,
+p,
+ul,
+li,
+a,
+table {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: Arial, sans-serif;
+}
+
+/*Estilo para o cabeçalho*/
+body.dark-mode {
+    background-color: #333;
+    color: #f0f0f0;
+  }
+  
+/* Estilo para o corpo da página */
+body {
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Estilo para o cabeçalho */
+h1 {
+    text-align: center;
+    font-size: 28px;
+    margin-top: 20px;
+}
+
+/* Estilo para a imagem e nome */
+.img-h1 {
+    text-align: center;
+}
+
+img {
+    width: 200px;
+    height: 250px;
+    border: 2px solid #333;
+}
+
+/* Estilo para a seção principal */
+.principal {
+    display: flex;
+    background-color: #fff;
+    padding: 20px;
+    border: 2px solid #333;
+    margin: 20px;
+}
+
+/* Estilo para o parágrafo principal */
+.p-principal {
+    display: flex;
+    flex-direction: column;
+    margin: 25px 0 0 15px;
+}
+
+/*estilo para experiências*/
+.experiencias {
+    display: flex;
+    background-color: #fff;
+    padding: 20px;
+    border: 2px solid #333;
+    margin: 20px;
+}
+
+/*estilo para conhecimentos*/
+.conhecimentos {
+    display: flex;
+    background-color: #fff;
+    padding: 20px;
+    border: 2px solid #333;
+    margin: 20px;
+}
+
+/*estilo para a tabela*/
+.tabela {
+    display: flex;
+    background-color: #fff;
+    padding: 20px;
+    border: 2px solid #333;
+    margin: 20px;
+}
+
+/* Estilo para o parágrafo de informações pessoais */
+p {
+    font-size: 25px;
+}
+
+/* Estilo para a seção secundária */
+.secundaria {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #fff;
+    padding: 20px;
+    border: 2px solid #333;
+    margin: 20px;
+}
+
+/* Estilo para links, audios e videos*/
+.links-time {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.auvi-time {
+    display: flex;
+    flex-direction: column;
+}
+
+/*Estilo para o hino*/
+.hino {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilo para o video*/
+.video {
+    margin: 15px 0 0 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilo para links e listas */
+a {
+    color: red; 
+    text-decoration: none;
+}
+
+a:visited{
+    color: red;
+}
+
+a:hover{
+    color: blue;
+}
+
+a:active{
+    color: green;
+}
+
+ul {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+/* Estilo para tabelas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #333;
+    padding: 8px;
+    text-align: center;
+    font-size: 20px;
+}
+
+/* Estilo para áudio e vídeo */
+audio,
+video {
+    width: 100%;
+}
+
+/* Estilo para os links na seção de contato */
+a[href^="mailto"] {
+    color: #0077b5;
+}
+
+/* Estilo para os links externos */
+a[target="_blank"] {
+    color: #0077b5;
+}
+
+/* Estilo para o rodapé */
+footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+/* Estilo para o p*/
+footer p {
+    font-size: 20px;
+}
+
+.hino p {
+    font-size: 15px;
+}
+
+.video p {
+    font-size: 15px;
+}
+
+/* Estilo para a seção de experiências e conhecimentos */
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/* Estilo para os parágrafos nas seções de experiências e conhecimentos */
+ul li,
+p {
+    margin-bottom: 10px;
+    font-size: 20px;
+}

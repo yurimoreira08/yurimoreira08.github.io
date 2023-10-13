@@ -1,19 +1,42 @@
+.principal {
+    display: flex;
+}
+
+.img-h1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.p-principal {
+    display: flex;
+    flex-direction: column;
+    margin: 25px 0 0 15px;
+}
+
 .ip{
-    background-color: lavenderblush;
+    background-color: white;
 }
 
 p{
-    color: darkblue;
+    color: black;
     text-align: left;
     font: 100;
+    margin: 5px;
+    font-size: 25px;
 }
 
-.ian{
-    color: darkblue;
+.secundaria {
+    display: flex;
 }
 
-#opa{
-    color: darkblue;
+.links-time {
+    display: flex;
+    flex-direction: column;
+}
+
+.auvi-time {
+    display: flex;
+    flex-direction: column;
 }
 
 a:link{
