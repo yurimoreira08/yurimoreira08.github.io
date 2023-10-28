@@ -1,35 +1,31 @@
-// Função para alternar a visibilidade de um elemento
-function toggleElementVisibility(elementId) {
-    const element = document.getElementById(elementId);
-    if (element.style.display === 'none' || element.style.display === '') {
-      element.style.display = 'flex';
-    } else {
-      element.style.display = 'none';
+function getProjects(){
+    const urlGitHub = 'https://api.github.com/users/yurimoreira08/repos';
+    var loadingElement = document.getElementById('loading');
+
+    fetch(urlGitHub, {
+        method: 'GET',})
+        .then(response => response.json())
+        .then((response) => {
+            loadingElement.style.display = 'none';
+            showProjects(response)
+        })
+        .catch((e) => {
+            console.log(e)
+        })
+}
+
+function showProjects(data){
+    var listElement = document.getElementById('my-projects-list');
+
+    for(let i = 0; i < data.length; i++){
+        let a = document.createElement('a');
+        a.href = data[i]['clone_url'];
+        a.target = '_blank';
+        a.title = data[i]['description'];
+        let linkText = document.createTextNode(data[i]['name']);
+        a.appendChild(linkText);
+        listElement.appendChild(a);
     }
-  }
+}
 
-  // Adiciona um evento de clique ao botão
-  const toggleButton = document.getElementById('toggle-button');
-  toggleButton.addEventListener('click', function () {
-    toggleElementVisibility('element-to-toggle');
-  });
-
-  const toggleButton2 = document.getElementById('toggle-button2');
-  toggleButton2.addEventListener('click', function () {
-    toggleElementVisibility('element-to-toggle2');
-  });
-
-  const toggleButton3 = document.getElementById('toggle-button3');
-  toggleButton3.addEventListener('click', function () {
-    toggleElementVisibility('element-to-toggle3');
-  });
-
-  const toggleButton4 = document.getElementById('toggle-button4');
-  toggleButton4.addEventListener('click', function () {
-    toggleElementVisibility('element-to-toggle4');
-  });
-
-  const toggleButton5 = document.getElementById('toggle-button5');
-  toggleButton5.addEventListener('click', function () {
-    toggleElementVisibility('element-to-toggle5');
-  });
+getProjects()
